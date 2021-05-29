@@ -12,12 +12,8 @@
   "env": {
    },
     "LOCALHOST": {
-       "description": "",
-       "required": "false"
-   },
-    "PORT": {
-      "description": "Port for Heroku to use (default:  3000).",
-      "value": "3000"
+       "description": "Edit the app name to <app name>.",
+       "value": "https://<app-name>.herokuapp.com"
   },
   "buildpacks": [
     {
