@@ -2,6 +2,7 @@
 
 import os
 import flask
+import python-dotenv
 from flask import request
 import requests
 import atexit
@@ -9,6 +10,11 @@ from apscheduler.schedulers.background import BackgroundScheduler
 import time
 from gevent.pywsgi import WSGIServer
 from werkzeug.utils import secure_filename
+from dotenv import load_dotenv
+
+load_dotenv()
+PORT = os.getenv('OAUTH2_PORT')
+HOST = os.getenc('OAUTH2_LOCALHOST')
 
 import google.oauth2.credentials
 import google_auth_oauthlib.flow
@@ -322,6 +328,6 @@ if __name__ == '__main__':
 
     # Specify a hostname and port that are set as a valid redirect URI
     # for your API project in the Google API Console.
-    print("server is running at port 80")
-    http_server = WSGIServer(('', 80), app)
+    print("server is running at port 'PORT")
+    http_server = WSGIServer(('HOST', 'PORT'), app)
     http_server.serve_forever()
