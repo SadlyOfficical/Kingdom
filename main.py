@@ -329,5 +329,5 @@ if __name__ == '__main__':
     # Specify a hostname and port that are set as a valid redirect URI
     # for your API project in the Google API Console.
     print("server is running at port 'PORT")
-    http_server = WSGIServer(('HOST', 'PORT'), app)
+    http_server = WSGIServer(('HOST', PORT), app)
     http_server.serve_forever()

@@ -1,0 +1,27 @@
+{
+  "name": "Oauth2-KingDom",
+  "description": "",
+  "keywords": [
+    "python",
+    "googleapi",
+    "oauth2-google",
+    "youtubeapi",
+    "oauth2-youtube"
+  ],
+  "repository": "https://github.com/SadlyOfficical/python-update-youtube-title",
+  "env": {
+   },
+    "LOCALHOST": {
+       "description": "",
+       "required": "false"
+   },
+    "PORT": {
+      "description": "Port for Heroku to use (default:  3000).",
+      "value": "3000"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
