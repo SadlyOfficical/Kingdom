@@ -1,4 +1,6 @@
 # how to use
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/SadlyOfficical/Kingdom)
+
 - install python
 - download cadidatial json from google cloud
 - rename cadidatial file to cli_id.json
